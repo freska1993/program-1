@@ -71,7 +71,7 @@ void ShowStudent(student& info)
 		cout << "student [" << i + 1 << "] =" << endl;
 		cout << "-----------------------" << endl;
 
-		cout << "name of student is :   " << info.name[i];
+		cout << "name of student is :   " << info.name[i]<<endl;
 
 		cout << "    and mark is : " << info.mark[i] << endl;
 
