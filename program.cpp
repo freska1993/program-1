@@ -14,11 +14,17 @@ struct student
 
 void AddMarkStudent(student& info)
 {
-	int numper = 0;
-	cout << "pleace enter mark of student \n";
-	cin >> numper;
-	info.mark.push_back(numper);
 
+	int numper = 0;
+	do
+	{
+		cout << "pleace enter mark of student \n";
+
+		cin >> numper;
+
+	} while (numper < 0 || numper>100);
+
+	info.mark.push_back(numper);
 
 }
 
